@@ -3,7 +3,7 @@
 """
 Predicting Google Stock Prices Trend (Open)
 
-@author: vsrivastav
+# @author: vsrivastav
 """
 
 #Importing libraries
@@ -14,7 +14,7 @@ import pandas as pd
 
 
 #Importing the training set
-dataset_train= pd.read_csv('../input/Google_Stock_Price_Train.csv')
+dataset_train= pd.read_csv('./Google_Stock_Price_Train.csv')
 training_set = dataset_train.iloc[:,1:2].values
 
 #Feature Scaling ( Standardisation vs Normalisation) normalisation for sigmoid
@@ -87,13 +87,13 @@ regressor.compile(optimizer='adam', loss = 'mean_squared_error')
 
 #Fitting RNN
 #100 for much higher accuracy
-regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
+regressor.fit(X_train, y_train, epochs = 3, batch_size = 32)
 
 
 # Making the predictions and viewing results
 
 #Getting real stock price of 2017
-dataset_test= pd.read_csv('../input/Google_Stock_Price_Test.csv')
+dataset_test= pd.read_csv('./Google_Stock_Price_Test.csv')
 real_stock_price = dataset_test.iloc[:,1:2].values
 
 #Getting the predicted stock price of 2017
