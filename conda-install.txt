@@ -1,0 +1,4 @@
+conda create -n tfk python=3.5
+activate tfk
+conda install pandas matplotlib jupyter notebook scipy scikit-learn keras
+conda install -c conda-forge tensorflow
