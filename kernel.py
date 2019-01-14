@@ -36,6 +36,7 @@ some correlations or some trends.
 X_train = []
 y_train = []
 
+#turn this into array that is 1198 rows with 60 elements
 for i in range(60, 1258):
     X_train.append(training_set_scaled[i-60:i,0])
     y_train.append(training_set_scaled[i,0])
