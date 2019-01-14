@@ -54,7 +54,6 @@ from keras.layers import Dense
 from keras.layers import LSTM
 from keras.layers import Dropout #to avoid overfitting
 
-#error in build regressor
 def build_regressor():
     
     # since predicting a continuous value, dealing with continuous values
