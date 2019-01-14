@@ -44,6 +44,7 @@ for i in range(60, 1258):
 X_train, y_train = np.array(X_train), np.array(y_train)
 
 #Reshaping STEP 5
+#now it will be an array of 1198, each with 60, and each of those 60 is a 1 element array
 X_train = np.reshape(X_train,(X_train.shape[0],X_train.shape[1], 1))
 
 
